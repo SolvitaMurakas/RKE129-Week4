@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&family=WindSong:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(252, 203, 237);
+    overflow: hidden;
+}
+
+.Container{
+    width: 45%;
+    margin: 32px auto;
+}
+
+.Header{
+    height: 250px;
+    text-align: center;
+}
+
+.Header h1{
+    color: rgb(206, 116, 179);
+    font-size: 3.5rem;
+    font-family: 'WindSong', cursive;
+    animation: Header;
+    animation-duration: 2s;
+    position: relative; /*top-right-bottom-left*/
+    animation-fill-mode: forwards;
+}
+@keyframes Header{
+    0% {top: -250px;}
+    100% {top: 100px;}
+}
+
+.Main{
+    font-family: 'Song Myung', serif;
+    color: rgb(129, 61, 109);
+    line-height: 1.5;
+}
+
+.Text-Left{
+    position: relative;
+    animation: TextLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes TextLeft{
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+.Text-Right{
+    margin-top: 32px;
+    text-align: right;
+    animation: TextRight;
+    animation-duration: 3s;
+    position: relative;
+}
+@keyframes TextRight{
+    0% {right: -1000px;}
+    85%{right: 50px;}
+    100%{right: 0px;}
+}
+
+.Footer{
+    text-align: center;
+}
+
+.btn{
+    opacity: 0;
+    border: 2px solid rgb(129, 61, 109);
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(129, 61, 109);
+    font-size: rem;
+    font-family: 'Song Myung', serif;
+    text-transform: uppercase;
+    animation: AniBtn;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes AniBtn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
